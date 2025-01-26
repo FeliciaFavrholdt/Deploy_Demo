@@ -9,13 +9,13 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 public class RoomDTO {
-    private Integer Id;
+    private Integer id;
     private Integer roomNumber;
     private Integer roomPrice;
     private Room.RoomType roomType;
 
     public RoomDTO(Room room) {
-        this.Id = room.getRoomId();
+        this.id = room.getRoomId();
         this.roomNumber = room.getRoomNumber();
         this.roomPrice = room.getRoomPrice().intValue();
         this.roomType = room.getRoomType();
